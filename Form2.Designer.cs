@@ -51,12 +51,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.A = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,14 +98,10 @@
             // 
             this.textKey.Location = new System.Drawing.Point(16, 181);
             this.textKey.Margin = new System.Windows.Forms.Padding(4);
+            this.textKey.Multiline = true;
             this.textKey.Name = "textKey";
-            this.textKey.PasswordChar = '*';
-            this.textKey.ReadOnly = true;
             this.textKey.Size = new System.Drawing.Size(228, 22);
             this.textKey.TabIndex = 5;
-            this.textKey.Text = "3";
-            this.textKey.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textKey_MouseClick);
-            this.textKey.Enter += new System.EventHandler(this.textKey_Enter);
             // 
             // label3
             // 
@@ -186,7 +178,6 @@
             this.textUser.Name = "textUser";
             this.textUser.Size = new System.Drawing.Size(228, 22);
             this.textUser.TabIndex = 13;
-            this.textUser.Enter += new System.EventHandler(this.textUser_Enter);
             // 
             // label7
             // 
@@ -276,80 +267,39 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(16, 305);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(16, 300);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 17);
+            this.label9.Size = new System.Drawing.Size(111, 20);
             this.label9.TabIndex = 21;
             this.label9.Text = "Tipo Accesso";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Cardiologia",
+            "Radiologia",
+            "Oncologia",
+            "Neurologia",
+            "Pediatria",
+            "Dirigenza"});
+            this.comboBox2.Location = new System.Drawing.Point(332, 325);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(165, 24);
+            this.comboBox2.TabIndex = 33;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(332, 299);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(333, 301);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(124, 17);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "Zone Competenza";
-            // 
-            // A
-            // 
-            this.A.AutoSize = true;
-            this.A.Location = new System.Drawing.Point(332, 326);
-            this.A.Margin = new System.Windows.Forms.Padding(4);
-            this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(38, 21);
-            this.A.TabIndex = 27;
-            this.A.TabStop = true;
-            this.A.Text = "A";
-            this.A.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(453, 326);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(38, 21);
-            this.radioButton2.TabIndex = 28;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "B";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(332, 354);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(38, 21);
-            this.radioButton3.TabIndex = 29;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "C";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(453, 354);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(39, 21);
-            this.radioButton4.TabIndex = 30;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "D";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(247, 177);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(74, 32);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "LEGGI";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label10.Size = new System.Drawing.Size(125, 20);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Area d\'accesso";
             // 
             // Form2
             // 
@@ -357,12 +307,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(877, 453);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.A);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button3);
@@ -419,11 +365,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton A;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Button button4;
     }
 }

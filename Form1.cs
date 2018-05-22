@@ -33,6 +33,8 @@ namespace Prova__
             MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
 
 
+            
+
             MySqlDataReader leggi = commandDatabase.ExecuteReader();
             try
             {

@@ -124,37 +124,6 @@ namespace Prova__
 
             return new string(chars);
         }
-
-        private void textKey_MouseClick(object sender, MouseEventArgs e)
-        {
-            string key = Console.ReadLine();
-            textUser.Text = key;
-        }
-
-        private void textKey_Enter(object sender, EventArgs e)
-        {
-            string key = Console.ReadLine();
-            textUser.Text = key;
-        }
-
-        private void textUser_Enter(object sender, EventArgs e)
-        {
-            string key = Console.ReadLine();
-            textKey.Text = key;
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            //ar g = new GetUSBDevices();
-
-            SerialPort serialPort1 = new SerialPort();
-            serialPort1.PortName = "COM4";
-            serialPort1.BaudRate = 9600;
-            serialPort1.DataBits = 8;
-            serialPort1.Open();
-            string ciao = serialPort1.ReadLine();
-            Console.Out.WriteLine(ciao);
-        }
     }
 }
 
